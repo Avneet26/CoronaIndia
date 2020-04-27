@@ -47,7 +47,6 @@ body {
 
 .counters {
   display: flex;
-  flex-basis: 200px;
   width: 700px;
   justify-content: space-around;
   margin: 10px auto;
@@ -77,14 +76,13 @@ h4{
 .name p{
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 10px;
 }
 .name h4{
   background: rgba(238,238,238,0.2);
   opacity: 0;
 }
 .confirmed h4{
-  padding-left: 10px;
+  
   color:#003e9c;
 }
 .active h4{
@@ -135,9 +133,18 @@ h4{
   .counters{
     flex-direction: column;
     height: 300px;
-    width: 400px;
+    width: 100%;
+    justify-content: center;
   }
   .style{
     font-size: 12px;
+    margin-left: 10px;
+  }
+  .name-head p{
+    margin-left: 0px;
+  }
+  .style-mobile{
+    width: 100px;
+    margin-left:0;
   }
 }
